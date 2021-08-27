@@ -9,6 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Footer from "./Footer"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,13 +27,7 @@ const Layout = ({ children }) => {
       <div siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div style={{ margin: 0, padding: 0 }}>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Dano Web
-        </footer>
+        <Footer />
       </div>
     </>
   )

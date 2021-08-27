@@ -1,17 +1,29 @@
 import React from "react"
-
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
+
+import { NavbarDesktop, NavbarMobile } from "./Navbar"
+
+const NavLink = ({ url, text }) => (
+  <Link to={url} className="py-2 shadow-lg text-gray-400">
+    {text}
+  </Link>
+)
 
 const Hero = () => {
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div className="flex flex-col lg:block min-h-screen bg-hero-pattern">
+      <div className="hidden xl:block">
+        <NavbarDesktop />
+      </div>
+
       <StaticImage
         src="../images/hero.JPG"
-        width={2304}
-        height={1537}
         placeholder="tracedSVG"
-        style={{ width: "100%" }}
+        className="border-b-2 border-red-400 h-1/2"
       />
+
+      <NavbarMobile />
     </div>
   )
 }

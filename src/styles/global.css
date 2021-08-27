@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
 @tailwind base;
+@layer base {
+  body {
+    @apply font-body tracking-wider;
+  }
+}
 @tailwind components;
 @tailwind utilities;
