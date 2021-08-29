@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      body: ["Julius Sans One"],
+      body: ["Waiting for the Sunrise"],
     },
     extend: {
       backgroundImage: theme => ({
@@ -12,7 +12,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      scale: ["active", "hover"],
+      gradientColorStops: ["active", "hover"],
+      backgroundClip: ["hover", "focus"],
+    },
   },
   plugins: [],
 }
