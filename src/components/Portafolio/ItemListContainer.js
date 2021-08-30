@@ -24,18 +24,6 @@ const products = [
   },
 ]
 
-export const query = graphql`
-  query {
-    fileName: file(relativePath: { eq: "images/1.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 // const items = [
 //   fetch("https://cruce-app.herokuapp.com/products").then((data) =>
 //     data
