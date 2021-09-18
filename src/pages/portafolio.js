@@ -1,14 +1,12 @@
-import React from "react"
-
-import Layout from "../components/layout"
-import { Portafolio } from "../components/Portafolio"
+import React from 'react';
+import { Portafolio } from "../components/DataSection"
 
 const PortafolioPage = () => {
   return (
-    <Layout>
+    <div>
       <Portafolio />
-    </Layout>
-  )
-}
+    </div>
+  );
+};
 
-export default PortafolioPage
+export default PortafolioPage;
