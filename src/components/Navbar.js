@@ -42,7 +42,7 @@ export const NavbarData = () => {
         <Link onClick={() => setDisplay("hidden")} to="/">
           <Logo />
         </Link>
-
+        {/* <p className="px-2 xl:hidden font-bold text-lg">Portafolio</p> */}
         <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4 text-md tracking-normal font-normal">
           <div className="hidden xl:block space-x-12 mx-auto">
             <Link

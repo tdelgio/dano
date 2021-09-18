@@ -12,12 +12,12 @@ const Portafolio = () => {
         <NavbarData />
       </div>
       <StaticImage
-        src="../../images/5.jpg"
+        src="../../../images/5.jpg"
         className="hidden lg:block bg-opacity-10 w-full"
 
       />
       <StaticImage
-        src="../../images/5.jpg"
+        src="../../../images/5.jpg"
         className="hidden lg:block bg-opacity-10 w-full"
       />
       <div className="z-0 absolute top-14 bottom-0">
