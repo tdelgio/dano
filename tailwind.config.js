@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        "gray-dark": "#29292a"
+      },
       fontFamily: {
         "custom": ["Waiting for the Sunrise"],
       },

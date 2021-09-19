@@ -12,12 +12,11 @@ const NavLink = ({ url, text }) => (
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:block min-h-screen bg-black">
+    <div className="flex flex-col lg:block min-h-screen bg-black ">
       <StaticImage
         src="../images/hero.JPG"
         placeholder="tracedSVG"
-
-        className="xl:absolute xl:top-14 border-b-2 border-red-400 flex-grow-0"
+        className="xl:absolute xl:top-10 border-b-2 border-red-400 flex-grow-0"
       />
       <NavbarMobile />
     </div>

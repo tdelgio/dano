@@ -9,62 +9,47 @@ const NavLink = ({ to, text }) => (
   <>
     <Link
       to={to}
-      className="transform scale-105 py-4  text-4xl xl:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-300 cursor-pointer tracking-widest"
+      className=" text-gray-200 transform scale-105 py-4  text-4xl xl:text-6xl text-transparent cursor-pointer tracking-widest"
     >
       {text}
     </Link>
   </>
 )
 
-
-
 export const NavbarMobile = () => {
   return (
-
-    <div className="font-custom xl:hidden flex-grow bg-black h-full flex flex-col items-center justify-around mx-auto w-full py-3 my-auto">
+    <div className="font-thin tracking-widest xl:hidden flex-grow bg-black h-full flex flex-col items-center justify-around mx-auto w-full py-3 my-auto">
       <NavLink to="/bio" text="BIO" />
       <NavLink to="/portafolio" text="PORTAFOLIO" />
       <NavLink to="/contact" text="CONTACTO" />
     </div>
-
   )
 }
 
 export const NavbarData = () => {
-
-  const [display, setDisplay] = useState("hidden");
+  const [display, setDisplay] = useState("hidden")
 
   return (
     //Desktop
 
-    <div className="fixed  block top-0 w-full shadow-md z-50 bg-gray-50">
+    <div className="fixed  block top-0 w-full shadow-2xl z-50 bg-gradient lg:bg-gradient-to-b from-black via-black to-transparent">
       <div className="relative flex items-center px-4 py-1">
         <Link onClick={() => setDisplay("hidden")} to="/">
           <Logo />
         </Link>
-        {/* <p className="px-2 xl:hidden font-bold text-lg">Portafolio</p> */}
-        <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4 text-md tracking-normal font-normal">
-          <div className="hidden xl:block space-x-12 mx-auto">
-            <Link
-              to="/bio"
-              activeClassName="border-b-2 border-gray-400 font-bold"
-            >
-              Bio
+        <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4 -mt-3">
+          <div className="pr-3 text-xl font-thin tracking-widest hidden xl:block space-x-24 mx-auto text-gray-100">
+            <Link to="/bio" activeClassName="text-red-400">
+              BIO
             </Link>
-            <Link
-              to="/portafolio"
-              activeClassName="border-b-2 border-gray-400 font-bold"
-            >
-              Portafolio
+            <Link to="/portafolio" activeClassName="text-red-400">
+              PORTAFOLIO
             </Link>
-            <Link
-              to="/contact"
-              activeClassName="border-b-2 border-gray-400 font-bold"
-            >
-              Contacto
+            <Link to="/contact" activeClassName="text-red-400">
+              CONTACTO
             </Link>
           </div>
-          <div className="absolute right-4 xl:hidden">
+          <div className="z-50 absolute right-4 xl:hidden">
             <div
               onClick={() =>
                 display === "hidden"
