@@ -32,12 +32,12 @@ export const NavbarData = () => {
   return (
     //Desktop
 
-    <div className="fixed  block top-0 w-full shadow-2xl z-50 bg-gradient lg:bg-gradient-to-b from-black via-black to-transparent">
+    <div className="fixed h-14  block top-0 w-full shadow-2xl z-50 bg-gradient lg:bg-gradient-to-b from-black via-black to-transparent">
       <div className="relative flex items-center px-4 py-1">
         <Link onClick={() => setDisplay("hidden")} to="/">
           <Logo />
         </Link>
-        <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4 -mt-3">
+        <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4">
           <div className="pr-3 text-xl font-thin tracking-widest hidden xl:block space-x-24 mx-auto text-gray-100">
             <Link to="/bio" activeClassName="text-red-400">
               BIO
