@@ -8,7 +8,7 @@ import { NavbarData } from "../../Navbar"
 const Portafolio = () => {
   return (
     <div className="block -mb-6 ">
-      <div className="z-50 h-14 bg-gray-dark">
+      <div className="z-50 h-14 lg:bg-gray-dark">
         <NavbarData />
       </div>
       <div className="z-0 absolute top-14 bottom-0">
