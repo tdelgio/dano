@@ -9,7 +9,7 @@ const NavLink = ({ to, text }) => (
   <>
     <Link
       to={to}
-      className=" text-gray-200 transform scale-105 py-4  text-4xl xl:text-6xl text-transparent cursor-pointer tracking-widest"
+      className=" text-gray-200 transform scale-105 text-xl xl:text-6xl text-transparent cursor-pointer tracking-widest"
     >
       {text}
     </Link>
