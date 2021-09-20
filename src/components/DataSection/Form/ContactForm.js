@@ -16,7 +16,7 @@ const ContactForm = () => {
               </p>
             </div>
             <div className="w-full flex flex-col py-4 z-30  space-y-6 max-w-2xl ">
-              <form className="w-screen sm:w-full flex flex-col px-6 space-y-8 py-4">
+              <form className="w-screen sm:w-full flex flex-col px-6 space-y-8 py-4 text-gray-dark">
                 <label>
                   <input
                     className="font-extralight w-full border-b-2 border-gray-400 py-1 px-2  "
