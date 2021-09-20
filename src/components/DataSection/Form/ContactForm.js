@@ -43,11 +43,6 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="my-2 text-center w-full bg-black">
-            <Link className="text-white hover:text-yellowFont" to="/">
-              Volver al Inicio
-            </Link>{" "}
-          </div>
         </div>
       </>
       ) } export default Contact
