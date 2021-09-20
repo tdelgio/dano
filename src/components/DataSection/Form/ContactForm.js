@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Footer from "../../Footer"
+
 const ContactForm = () => {
   return (
     <div className="bg-black h-screen">
@@ -45,7 +47,7 @@ const ContactForm = () => {
           </div>
         </div>
       </>
-      ) } export default Contact
+      <Footer />
     </div>
   )
 }
