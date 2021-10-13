@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Item from "./Item"
 
 import { getTattoos } from "../../../utils/promises"
+import { useStaticQuery } from "gatsby"
 
 const ItemList = ({ tattoos }) => (
   <>
@@ -18,12 +19,13 @@ const ItemList = ({ tattoos }) => (
 
 const ItemListContainer = () => {
   const [tattoos, setTattoos] = useState([])
+  // console.log(tattooQuery)
 
   useEffect(() => {
     getTattoos.then(response => {
       setTattoos(response)
       // setLoading(false)
-      console.log(tattoos)
+      // console.log(tattoos)
     })
   })
 

@@ -12,7 +12,7 @@ const Portafolio = () => {
         <NavbarData />
       </div>
       <div className="fixed top-0 bottom-0 w-full bg-gray-dark" />
-      <div className="z-0 relative mx-auto top-0 bottom-0 ">
+      <div className="z-0 relative mx-auto top-6 bottom-0 ">
         <ItemListContainer />
       </div>
     </div>

@@ -5,6 +5,7 @@ const Bio = () => {
   return (
     <div className="relative flex flex-col xl:block min-h-screen bg-black">
       <StaticImage
+        alt="logo"
         height={1200}
         src="../../../images/1.jpg"
         className="max-h-screen transform -translate-x-24 max-w-full"
