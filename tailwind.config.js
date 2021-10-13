@@ -3,11 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Graphik", "sans-serif"],
+      },
       colors: {
-        "gray-dark": "#29292a"
+        "gray-dark": "#29292a",
       },
       fontFamily: {
-        "custom": ["Waiting for the Sunrise"],
+        custom: ["Waiting for the Sunrise"],
       },
       backgroundImage: theme => ({
         "hero-pattern": "url('/src/images/background.jpg')",

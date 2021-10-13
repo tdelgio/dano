@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <StaticImage
       src="../images/logo.png"
-      className="z-50 h-12 w-12 rounded-full shadow-md"
+      className="z-54 h-12 w-12 rounded-full shadow-md"
     />
   )
 }

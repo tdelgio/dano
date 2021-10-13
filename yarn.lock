@@ -6167,6 +6167,19 @@
     "valid-url" "^1.0.9"
     "xstate" "^4.14.0"
 
+"gatsby-source-storyblok@^3.0.1":
+  "integrity" "sha512-B/8t3yX8Wc98luy3uhztVkaPLWaZX3D0wuXow+6xxCCLS7g1o4MVO4Hzhhg33ncWao4Qq3tMnkusgly3vRZ4Dg=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-storyblok/-/gatsby-source-storyblok-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "json-stringify-safe" "^5.0.1"
+    "storyblok-js-client" "^4.0.6"
+
+"gatsby-storyblok-image@^0.3.0":
+  "integrity" "sha512-MApIa0AF26zjpSH3lZsakA/sE7iLLTs/7QuNEk1VOHU1YH/3lE+buRAxxpIaxdHyG4bze6t6ZrEN77oXZ3eXQQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-storyblok-image/-/gatsby-storyblok-image-0.3.0.tgz"
+  "version" "0.3.0"
+
 "gatsby-telemetry@^2.11.0":
   "integrity" "sha512-6GEcZpsY5N/+K+SGGdDHuOknjer6vsYLJsUuUWkz32t8OK9lE1cLvXIdO2eTHdS4rtWFM324a/yFMlizp59SbA=="
   "resolved" "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-2.11.0.tgz"
@@ -10636,7 +10649,7 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
-"react-dom@^16.9.0 || ^17.0.0", "react-dom@^17.0.1", "react-dom@15.x || 16.x || 17.x":
+"react-dom@^16.9.0 || ^17.0.0", "react-dom@^17.0.1", "react-dom@>=15.3.2", "react-dom@15.x || 16.x || 17.x":
   "integrity" "sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.1.tgz"
   "version" "17.0.1"
@@ -10685,7 +10698,7 @@
   "resolved" "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
   "version" "2.1.1"
 
-"react@^16.3.0 || ^17.0.0", "react@^16.9.0 || ^17.0.0", "react@^17.0.1", "react@>=16.3.0", "react@15.x || 16.x || 17.x", "react@17.0.1":
+"react@^16.3.0 || ^17.0.0", "react@^16.9.0 || ^17.0.0", "react@^17.0.1", "react@>=15.3.2", "react@>=16.3.0", "react@15.x || 16.x || 17.x", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
@@ -11877,6 +11890,18 @@
   "integrity" "sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow="
   "resolved" "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz"
   "version" "1.5.0"
+
+"storyblok-js-client@^4.0.6", "storyblok-js-client@^4.1.5":
+  "integrity" "sha512-0cd9AtU1JE0Q7lyda7NSyfwasvuy3X5v9z1kMm4TWmcbUiQEjUjiNaZ9o0bu7iTpgVeatoa2j6XGLRqPQKz8dw=="
+  "resolved" "https://registry.npmjs.org/storyblok-js-client/-/storyblok-js-client-4.1.5.tgz"
+  "version" "4.1.5"
+  dependencies:
+    "qs" "^6.9.4"
+
+"storyblok-react@^0.1.0", "storyblok-react@^0.1.2":
+  "integrity" "sha512-68KtSgkAT/0XZ9diz3wfoPl6xOt3WJmCv03qZOZUNPs1uDFh1FHF7P9OHt6TfMcxPrv3ldjTypkQXbFdT7JnvA=="
+  "resolved" "https://registry.npmjs.org/storyblok-react/-/storyblok-react-0.1.2.tgz"
+  "version" "0.1.2"
 
 "stream-parser@~0.3.1":
   "integrity" "sha1-FhhUhpRCACGhGC/wrxkRwSl2F3M="

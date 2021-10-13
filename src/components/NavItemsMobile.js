@@ -18,7 +18,7 @@ const NavItemsMobile = ({ display, setDisplay }) => {
   return (
     <div>
       <div className={display}>
-        <div className="z-0 absolute left-0 top-0 pt-20 right-0  w-full flex flex-col rounded-sm shadow-md space-y-6 bg-gray-50 p-4 tracking-tight backdrop-filter backdrop-blur">
+        <div className="z-0 absolute left-0 top-0 mt-20 right-0  w-full flex flex-col rounded-b-md shadow-md space-y-6 bg-gray-200 p-4 tracking-tight backdrop-filter backdrop-blur">
           <StyledLink setDisplay={setDisplay} to="/bio" text="BIO" />
           <StyledLink
             setDisplay={setDisplay}

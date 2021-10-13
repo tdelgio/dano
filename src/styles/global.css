@@ -3,11 +3,13 @@
 @tailwind base;
 @layer base {
   body {
-    margin: 0;
-    font-family: "Roboto," "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @apply font-sans;
+  }
+  .input {
+    @apply font-extralight w-full  bg-gray-dark py-2 px-2  rounded-md text-gray-200 tracking-wider;
+  }
+  .navLink {
+    @apply text-xl font-thin tracking-widest text-gray-400;
   }
 }
 @tailwind components;

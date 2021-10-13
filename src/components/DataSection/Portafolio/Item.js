@@ -11,7 +11,7 @@ const Item = ({ image }) => (
         placeholder="blurred "
         alt="item"
         height={400}
-        className="w-full h-70"
+        className="w-full h-70 rounded-t-md"
       />
     </li>
     <Footer />

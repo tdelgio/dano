@@ -4,7 +4,7 @@ const tattoos = [
     title: "Tattoo1",
 
     description: "",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwuDpybStkicRBLYD8W0dOkHYuXTgXXyP4g&usqp=CAU",
+    url: "https://picsum.photos/200/300",
   },
   {
     id: 2,
