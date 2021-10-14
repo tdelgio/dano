@@ -17,7 +17,7 @@ const Hero = () => {
         src="../images/hero.JPG"
         placeholder="tracedSVG"
         alt="hero image"
-        className="relative top-0 lg:top-20 border-b-2 border-red-400 flex-grow-0 w-full"
+        className="relative top-0 lg:top-20 border-b-2 border-red-dark flex-grow-0 w-full"
       />
       <NavbarMobile />
     </div>

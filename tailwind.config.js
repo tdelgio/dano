@@ -8,6 +8,8 @@ module.exports = {
       },
       colors: {
         "gray-dark": "#29292a",
+        "red-block": "#DA3B01",
+        "red-dark": "#731f01",
       },
       fontFamily: {
         custom: ["Waiting for the Sunrise"],

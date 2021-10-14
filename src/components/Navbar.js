@@ -49,21 +49,21 @@ export const NavbarData = () => {
             <Link
               className="navLink"
               to="/bio"
-              activeClassName="font-light  text-red-500"
+              activeClassName="font-light  text-red-block"
             >
               BIO
             </Link>
             <Link
               className="navLink"
               to="/portafolio"
-              activeClassName=" font-light text-red-500"
+              activeClassName=" font-light text-red-block"
             >
               PORTAFOLIO
             </Link>
             <Link
               className="navLink"
               to="/contact"
-              activeClassName="font-light text-red-500"
+              activeClassName="font-light text-red-block"
             >
               CONTACTO
             </Link>
