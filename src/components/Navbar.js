@@ -69,7 +69,7 @@ export const NavbarData = () => {
             </Link>
           </div>
           <div className="z-50 absolute right-4 md:hidden">
-            <div
+            <button
               onClick={() =>
                 display === "hidden"
                   ? setDisplay("block")
@@ -77,7 +77,7 @@ export const NavbarData = () => {
               }
             >
               <MenuIcon display={display} />
-            </div>
+            </button>
           </div>
           <NavItemsMobile display={display} setDisplay={setDisplay} />
         </div>

@@ -17,6 +17,9 @@ module.exports = {
       backgroundImage: theme => ({
         "hero-pattern": "url('/src/images/background.jpg')",
       }),
+      boxShadow: {
+        card: " 0 10px 15px -3px rgba(41, 41, 42, 1)",
+      },
     },
   },
   variants: {

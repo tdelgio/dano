@@ -67,7 +67,7 @@ export const InstagramIcon = () => (
     href="https://www.instagram.com/danobissandoval/"
     aria-label="link to instagram"
     target="_blank"
-    rel="nonrefer"
+    rel="noreferrer"
   >
     <svg
       width="32"

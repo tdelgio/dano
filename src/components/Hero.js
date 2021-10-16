@@ -1,14 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 
-import { NavbarData, NavbarMobile } from "./Navbar"
-
-const NavLink = ({ url, text }) => (
-  <Link to={url} className="py-2 shadow-lg text-gray-400">
-    {text}
-  </Link>
-)
+import { NavbarMobile } from "./Navbar"
 
 const Hero = () => {
   return (

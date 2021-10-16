@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Footer from "../../Footer"
 import { InstagramIcon } from "../../Icons"

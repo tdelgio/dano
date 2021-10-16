@@ -31,6 +31,15 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `oz1n6doyx04t`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `M0NRiZxmAUriZ6Vs-c0Z-KPIHp1CxP5fw2Iun2zD6Yw`,
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
