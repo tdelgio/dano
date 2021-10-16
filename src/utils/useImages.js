@@ -4,7 +4,7 @@ const useTattoo = () => {
   const data = useStaticQuery(
     graphql`
       query MyQuery {
-        allContentfulCard {
+        allContentfulContainer {
           edges {
             node {
               image {
