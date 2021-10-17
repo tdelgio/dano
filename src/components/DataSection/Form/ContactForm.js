@@ -11,8 +11,8 @@ const ContactForm = () => {
         <h1 className="p-8 font-extralight text-gray-300 text-xl">CONTACTO</h1>
         <hr className="my-2 w-full border-red-dark" />
       </div>
-      <div className="lg:relative top-0 lg:top-10 bottom-0 -mt-24 lg:mt-0 flex flex-col items-center justify-center h-full min-h-screen tracking-widest leading-6 bg-black text-gray-200">
-        <div className="z-40 opacity-90 flex items-center justify-center flex-col mx-1 py-5  sm:py-10 tracking-widest  border-gray-dark backdrop-filter backdrop-blur-md rounded-sm shadow-lg lg:p-8 max-w-md ">
+      <div className="lg:relative top-0 lg:top-10 bottom-0 flex flex-col items-center justify-center h-full min-h-screen tracking-widest leading-6 bg-black text-gray-200">
+        <div className="-mt-24 z-40 opacity-90 flex items-center justify-center flex-col mx-1 py-5  sm:py-10 tracking-widest  border-gray-dark backdrop-filter backdrop-blur-md rounded-xl shadow-lg lg:p-8 max-w-md ">
           <div className="flex flex-col items-center md:flex-row align-center justify-center text-center xl:text-left sm:px-2 md:px-5 max-w-2xl">
             <p className="mx-9 font-light text-lg tracking-widest leading-6">
               ENVIA TU CONSULTA{" "}

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const IndexPage = () => (
   <>
     <div className="hidden lg:block">
-      <Layout>
+      <Layout title="Home">
         <Hero />
       </Layout>
     </div>

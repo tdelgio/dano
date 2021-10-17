@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Danobis Sandoval Tattoo`,
-    description: `Tattoo - Travel - Art`,
+    description: `ART & TRIP`,
     author: `@gtdelgio`,
     siteUrl: `https://danotattoo.gatsbyjs.io`,
   },

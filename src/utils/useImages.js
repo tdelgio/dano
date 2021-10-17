@@ -4,7 +4,7 @@ const useTattoo = () => {
   const data = useStaticQuery(
     graphql`
       query MyQuery {
-        allContentfulContainer {
+        allContentfulPortafolio {
           edges {
             node {
               image {
@@ -17,7 +17,7 @@ const useTattoo = () => {
       }
     `
   )
-  return data.allContentfulContainer.edges.map(i => i.node.image)
+  return data.allContentfulPortafolio.edges.map(i => i.node.image)
 }
 
 export default useTattoo

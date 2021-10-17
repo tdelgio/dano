@@ -27,6 +27,7 @@ module.exports = {
       scale: ["active", "hover"],
       gradientColorStops: ["active", "hover"],
       backgroundClip: ["hover", "focus"],
+      textColor: ["active"],
     },
   },
   plugins: [],

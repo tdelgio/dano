@@ -9,7 +9,7 @@ const NavLink = ({ to, text }) => (
   <>
     <Link
       to={to}
-      className="py-8 w-full rounded-lg text-center text-gray-200 text-xl xl:text-6xl text-transparent cursor-pointer tracking-wider bg-gray-dark shadow-2xl"
+      className="py-5 w-full rounded-lg text-center text-gray-200 text-xl xl:text-6xl text-transparent cursor-pointer tracking-wider bg-gray-dark shadow-2xl max-w-md"
     >
       {text}
     </Link>
@@ -18,8 +18,14 @@ const NavLink = ({ to, text }) => (
 
 export const NavbarMobile = () => {
   return (
-    <div className="font-thin tracking-wider lg:hidden  flex flex-col items-center justify-around flex-grow mx-auto w-full py-3 px-4 ">
-      <NavLink to="/bio" text="ART & TRIP" />
+    <div className="font-thin tracking-wider xl:hidden  flex flex-col items-center justify-center space-y-8 flex-grow  mx-auto w-full py-3 px-4 ">
+      <Link
+        className="py-5 w-full rounded-xl text-center text-gray-200 text-xl xl:text-6xl text-transparent cursor-pointer bg-gray-dark shadow-2xl whitespace-nowrap max-w-md"
+        to="/bio"
+      >
+        ART <span className="inline text-red-block font-light">& </span>
+        TRIP
+      </Link>
       <NavLink to="/portafolio" text="PORTAFOLIO" />
       <NavLink to="/contact" text="CONTACTO" />
     </div>
@@ -54,11 +60,12 @@ export const NavbarData = () => {
               <Logo height="h-12 w-12" />
             </Link>
             <Link
-              className="navLink inline"
+              className="navLink inline whitespace-nowrap"
               to="/bio"
               activeClassName=" text-red-block"
             >
-              ART <span className="text-red-dark font-normal">&</span> TRIP
+              ART <span className="text-red-dark font-normal inline ">&</span>{" "}
+              TRIP
             </Link>
             <Link
               className="navLink"
