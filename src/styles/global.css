@@ -3,7 +3,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-sans outline-none;
+    @apply font-sans outline-none tracking-wider leading-6;
   }
   .input {
     @apply font-extralight w-full bg-transparent border-b border-gray-200 pt-4  text-gray-200 tracking-wider;

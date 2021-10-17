@@ -7,7 +7,7 @@ import useTattoo from "../../../utils/useImages"
 const ItemListContainer = () => {
   const tattoo = useTattoo()
   const imageTattoo = tattoo[0]
-  console.log(imageTattoo)
+  // console.log(imageTattoo)
 
   return (
     <div className="z-0 py-4 px-2 mx-auto w-full">

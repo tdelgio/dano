@@ -9,7 +9,7 @@ const NavLink = ({ to, text }) => (
   <>
     <Link
       to={to}
-      className="py-8 w-full rounded-lg text-center text-gray-200 text-xl xl:text-6xl text-transparent cursor-pointer tracking-widest bg-gray-dark shadow-2xl"
+      className="py-8 w-full rounded-lg text-center text-gray-200 text-xl xl:text-6xl text-transparent cursor-pointer tracking-wider bg-gray-dark shadow-2xl"
     >
       {text}
     </Link>
@@ -18,8 +18,8 @@ const NavLink = ({ to, text }) => (
 
 export const NavbarMobile = () => {
   return (
-    <div className=" font-thin tracking-widest lg:hidden  flex flex-col items-center justify-around flex-grow mx-auto w-full py-3 px-4 ">
-      <NavLink to="/bio" text="BIO" />
+    <div className="font-thin tracking-wider lg:hidden  flex flex-col items-center justify-around flex-grow mx-auto w-full py-3 px-4 ">
+      <NavLink to="/bio" text="ART & TRIP" />
       <NavLink to="/portafolio" text="PORTAFOLIO" />
       <NavLink to="/contact" text="CONTACTO" />
     </div>
@@ -39,31 +39,38 @@ export const NavbarData = () => {
         </div>
 
         <Link className="md:hidden" to="/">
-          <Logo />
+          <Logo height="h-12 w-12" />
         </Link>
+        <Link
+          className="md:hidden block ml-4 tracking-wider border-2  border-gray-dark bg-gblack text-red-block hover:text-red-block hover:scale-105 text-sm font-light py-1 px-3 rounded-md shadow-card"
+          to="/contact"
+        >
+          CONTACTO
+        </Link>
+
         <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4">
           <div className="pr-3 hidden md:flex md:items-center space-x-24 mx-auto text-gray-100">
             <Link onClick={() => setDisplay("hidden")} to="/">
-              <Logo />
+              <Logo height="h-12 w-12" />
             </Link>
             <Link
-              className="navLink"
+              className="navLink inline"
               to="/bio"
-              activeClassName="font-light  text-red-block"
+              activeClassName=" text-red-block"
             >
-              BIO
+              ART <span className="text-red-dark font-normal">&</span> TRIP
             </Link>
             <Link
               className="navLink"
               to="/portafolio"
-              activeClassName=" font-light text-red-block"
+              activeClassName=" text-red-block"
             >
               PORTAFOLIO
             </Link>
             <Link
               className="navLink"
               to="/contact"
-              activeClassName="font-light text-red-block"
+              activeClassName="text-red-block"
             >
               CONTACTO
             </Link>
