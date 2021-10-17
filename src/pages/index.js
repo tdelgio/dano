@@ -1,11 +1,13 @@
 import * as React from "react"
 import Hero from "../components/Hero"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <>
     <div className="hidden lg:block">
-      <Layout title="Home">
+      <Layout>
+        <Seo title="Home" />
         <Hero />
       </Layout>
     </div>
