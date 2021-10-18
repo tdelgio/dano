@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <>
-    <Layout>
+    <Layout classCustom="hidden lg:block">
       <Seo title="Home" />
       <Hero />
     </Layout>
