@@ -5,14 +5,13 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <>
+    <Seo title="Home" />
     <div className="hidden lg:block">
       <Layout>
-        <Seo title="Home" />
         <Hero />
       </Layout>
     </div>
     <div className="block lg:hidden">
-      <Seo title="Home" />
       <Hero />
     </div>
   </>
