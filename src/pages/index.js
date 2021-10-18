@@ -9,12 +9,6 @@ const IndexPage = () => (
       <Seo title="Home" />
       <Hero />
     </Layout>
-    {/* <div className="block lg:hidden">
-      <Hero />
-    </div>
-    <div className="hidden lg:block">
-     
-    </div> */}
   </>
 )
 
