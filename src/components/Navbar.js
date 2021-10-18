@@ -84,6 +84,7 @@ export const NavbarData = () => {
           </div>
           <div className="z-50 absolute right-4 md:hidden">
             <button
+              aria-label="button menu"
               onClick={() =>
                 display === "hidden"
                   ? setDisplay("block")
