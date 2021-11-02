@@ -11,8 +11,8 @@ const ItemListContainer = () => {
   // console.log(imageTattoo)
 
   return (
-    <div className="z-0 pb-4 px-2 mx-auto w-full">
-      <ul className="flex flex-col items-center w-full justify-center lg:px-4 lg:flex-row lg:flex-wrap">
+    <div className="z-0 pb-4 px-2 mx-auto w-full h-full">
+      <ul className="flex flex-col items-center w-full h-full justify-center lg:px-4 lg:flex-row lg:flex-wrap">
         {imageTattoo.map(i => (
           <>
             <GatsbyImage

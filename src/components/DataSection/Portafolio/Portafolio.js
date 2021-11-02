@@ -17,7 +17,6 @@ const Portafolio = () => {
           </h1>
           <hr className="my-2 w-full border-red-dark" />
         </div>
-
         <ItemListContainer />
       </div>
     </div>
