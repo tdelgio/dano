@@ -8,7 +8,11 @@ const useTattoo = () => {
           edges {
             node {
               image {
-                gatsbyImageData(width: 350)
+                gatsbyImageData(
+                  height: 350
+                  layout: CONSTRAINED
+                  placeholder: TRACED_SVG
+                )
                 title
               }
             }

@@ -2,12 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Danobis Sandoval Tattoo`,
     description: `ART & TRIP`,
-    author: `@gtdelgio`,
-    siteUrl: `https://danotattoo.gatsbyjs.io`,
+    author: `@tdelgio`,
+    siteUrl: `https://danobissandoval.art`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,16 +16,22 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Danobis Sandoval`,
+        short_name: `a&t`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFF`,
+        theme_color: `#FFF`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
