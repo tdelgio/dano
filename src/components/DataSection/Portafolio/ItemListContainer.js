@@ -12,7 +12,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="px-2 h-full flex flex-col ">
-      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center py-12">
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center lg:py-12">
         {imageTattoo.map(
           i =>
             i.description === "black" && (
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
             )
         )}
       </div>
-      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center py-12 ">
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center lg:py-12 ">
         {imageTattoo.map(
           i =>
             i.description === "white" && (
@@ -42,7 +42,7 @@ const ItemListContainer = () => {
             )
         )}
       </div>
-      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center py-12 ">
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center lg:py-12 ">
         {imageTattoo.map(
           i =>
             i.description === "color" && (
