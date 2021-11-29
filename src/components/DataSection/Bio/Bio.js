@@ -15,15 +15,15 @@ const Bio = () => {
             alt="logo"
             height={1200}
             src="../../../images/12.jpg"
-            className="h-screen transform md:-translate-x-12 w-full mt-14"
+            className="h-screen transform md:-translate-x-12 w-full lg:w-3/4 mt-14"
           />
         </div>
 
-        <div className="absolute top-20 lg:top-0 right-0 left-0 lg:h-full w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:px-12  font-thin text-gray-200">
+        <div className="absolute top-20 lg:top-0 right-0 left-0 lg:left-64 lg:h-full w-full flex flex-col lg:flex-row items-center justify-center lg:justify-center lg:px-12  font-thin text-gray-200">
           <Logo
             heigth="h-96"
             width="w-80"
-            classCustom="opacity-40 shadow-lg lg:transform xl:scale-150 xl:translate-x-8 2xl:translate-x-16"
+            classCustom="opacity-40 shadow-lg lg:transform xl:scale-150 xl:translate-x-8 2xl:translate-x-16 lg:hidden"
           />
           <div className="max-w-sm backdrop-filter backdrop-blur-md space-y-2 p-4">
             <h2 className="text-xl text-gray-400">{title}</h2>
