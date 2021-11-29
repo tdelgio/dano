@@ -9,11 +9,12 @@ const useTattoo = () => {
             node {
               image {
                 gatsbyImageData(
-                  height: 350
                   layout: CONSTRAINED
                   placeholder: TRACED_SVG
+                  width: 300
                 )
                 title
+                description
               }
             }
           }

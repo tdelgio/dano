@@ -8,22 +8,40 @@ import Footer from "../../Footer"
 const ItemListContainer = () => {
   const tattoo = useTattoo()
   const imageTattoo = tattoo[0]
-  // console.log(imageTattoo)
+  console.log(imageTattoo)
 
   return (
-    <div className="z-0 pb-4 px-2 lg:mt-20 mx-auto w-full h-full">
-      <ul className="flex flex-col items-center w-full h-full justify-center lg:px-4 lg:flex-row lg:flex-wrap">
-        {imageTattoo.map(i => (
-          <>
-            <GatsbyImage
-              key={i.id}
-              className="m-4 my-16 lg:m-16 max-h-96"
-              image={i.gatsbyImageData}
-              alt="tattoo image"
-            />
-          </>
-        ))}
-      </ul>
+    <div className="px-2 h-full flex flex-col ">
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center">
+        {imageTattoo.map(
+          i =>
+            i.description === "black" && (
+              <div>
+                <GatsbyImage
+                  key={i.id}
+                  image={i.gatsbyImageData}
+                  alt="tattoo image"
+                  className="my-8 lg:m-8   w-64 transform lg:hover:scale-150 hover:z-20 rounded-b-lg"
+                />
+              </div>
+            )
+        )}
+      </div>
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center bg-white">
+        {imageTattoo.map(
+          i =>
+            i.description === "white" && (
+              <div>
+                <GatsbyImage
+                  key={i.id}
+                  image={i.gatsbyImageData}
+                  alt="tattoo image"
+                  className="my-8 lg:m-8  w-64 transform lg:hover:scale-150 hover:z-20 rounded-b-lg max-h-96"
+                />
+              </div>
+            )
+        )}
+      </div>
     </div>
   )
 }
