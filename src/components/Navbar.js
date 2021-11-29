@@ -54,7 +54,7 @@ export const NavbarData = () => {
           CONTACTO
         </Link>
 
-        <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4">
+        <div className="w-full flex items-center ml-4 lg:ml-8 space-x-4 h-20">
           <div className="pr-3 hidden md:flex md:items-center space-x-24 mx-auto text-gray-100">
             <Link onClick={() => setDisplay("hidden")} to="/">
               <Logo height="h-12 w-12" />
