@@ -12,7 +12,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="px-2 h-full flex flex-col ">
-      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center">
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center py-12">
         {imageTattoo.map(
           i =>
             i.description === "black" && (
@@ -21,13 +21,13 @@ const ItemListContainer = () => {
                   key={i.id}
                   image={i.gatsbyImageData}
                   alt="tattoo image"
-                  className="my-8 lg:m-8   w-64 transform lg:hover:scale-150 hover:z-20 rounded-b-lg"
+                  className="my-8 lg:m-8   w-64 transform lg:hover:scale-150 hover:z-20"
                 />
               </div>
             )
         )}
       </div>
-      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center bg-white">
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center py-12 ">
         {imageTattoo.map(
           i =>
             i.description === "white" && (
@@ -36,7 +36,22 @@ const ItemListContainer = () => {
                   key={i.id}
                   image={i.gatsbyImageData}
                   alt="tattoo image"
-                  className="my-8 lg:m-8  w-64 transform lg:hover:scale-150 hover:z-20 rounded-b-lg max-h-96"
+                  className="my-8 lg:m-8  w-64 transform lg:hover:scale-150 hover:z-20 max-h-96"
+                />
+              </div>
+            )
+        )}
+      </div>
+      <div className=" z-10 overflow-x-scroll overscroll-x-contain flex items-center py-12 ">
+        {imageTattoo.map(
+          i =>
+            i.description === "color" && (
+              <div>
+                <GatsbyImage
+                  key={i.id}
+                  image={i.gatsbyImageData}
+                  alt="tattoo image"
+                  className="my-8 lg:m-8  w-64 transform lg:hover:scale-150 hover:z-20 max-h-96"
                 />
               </div>
             )
