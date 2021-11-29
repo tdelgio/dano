@@ -24,7 +24,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      scale: ["active", "hover"],
+      scale: ["active", "hover", "group-hover"],
       gradientColorStops: ["active", "hover"],
       backgroundClip: ["hover", "focus"],
       textColor: ["active"],
